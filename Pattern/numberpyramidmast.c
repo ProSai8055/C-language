@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main(){
+    int s,a,d,b;
+    printf("Enter the size of pyramid :");
+    scanf("%d",&a);
+    int m=1;
+  
+    for(int i=0;i<a;i++){
+        d=1;
+        int q=1;
+        for(int j=1;j<=a-i-1;j++){
+            printf(" ");
+        }
+
+        for(int k=1;k<=m+i;k++){
+    
+            printf("%d",d);
+            if(q<i)
+            d++;
+            else
+            d--;
+        }
+         m++;   
+        printf("\n");
+    }
+}
